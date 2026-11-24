@@ -9,10 +9,12 @@
 @font-face { font-family: "Funnel Sans"; src: url("../fonts/funnel-regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Funnel Sans"; src: url("../fonts/funnel-medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 /* Cormorant Garamond reemplaza a Cigars (la del brandbook es paga).
+   Los archivos -v2 tienen corregido el acento agudo de las minúsculas (á é í ó ú ý): el original
+   venía corrido a la derecha; se reemplazó por el acento de las mayúsculas, centrado.
    Si compran la licencia web de Cigars: sumar su @font-face y cambiar --fuente-titulos. */
-@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-light.woff2") format("woff2"); font-weight: 300; font-display: swap; }
-@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-light-italic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-light-v2.woff2") format("woff2"); font-weight: 300; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-regular-v2.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("../fonts/cormorant-light-italic-v2.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
 @font-face { font-family: "Baskervville"; src: url("../fonts/baskervville-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 
 /* ---------- Variables de marca ---------- */
@@ -415,7 +417,7 @@ body.menu-abierto .whatsapp-flotante { opacity: 0; pointer-events: none; }
 .migas li + li::before { content: "·"; margin-right: .5rem; }
 .migas a { text-decoration: none; display: inline-block; padding: .35rem 0; }
 .migas a:hover { text-decoration: underline; }
-.migas [aria-current] { color: var(--texto); }
+.migas [aria-current] { color: var(--texto); padding: .35rem 0; }
 
 /* Cabecera de página (almacén, categorías) */
 .cabecera-pagina { padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(2.5rem, 6vw, 4rem); }
