@@ -1,0 +1,26 @@
+# Sitio estático. Netlify corre generar.js en cada subida: arma las páginas de productos a partir de productos.json.
+# (No instala nada: generar.js usa solo Node.) Netlify usa 404.html automáticamente para las páginas que no existen.
+[build]
+  publish = "."
+  command = "node generar.js"
+
+# Seguridad básica
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Las imágenes no cambian seguido: el navegador las guarda 1 año (la web carga más rápido al volver)
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# La tipografía tampoco cambia: también se guarda 1 año
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

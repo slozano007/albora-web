@@ -1,0 +1,128 @@
+{
+  "categorias": [
+    {
+      "id": "practica",
+      "nombre": "Para tu práctica",
+      "bajada": "Piezas para tu momento de pausa, que también quedan lindas en el living.",
+      "foto": "img/categoria-practica.webp"
+    },
+    {
+      "id": "rituales",
+      "nombre": "Para tus rituales",
+      "bajada": "Mates, yerberos y objetos de nuestras tradiciones, para el ritual de todos los días.",
+      "foto": "img/categoria-rituales.webp"
+    },
+    {
+      "id": "hogar",
+      "nombre": "Para tu hogar",
+      "bajada": "Telas, cortinas y detalles para habitar la casa con calma.",
+      "foto": "img/categoria-hogar.webp"
+    }
+  ],
+  "productos": [
+    {
+      "id": "bolso-para-el-mat",
+      "nombre": "Bolso para el mat",
+      "categoria": "practica",
+      "precio": "Próximamente",
+      "descripcion": "Para llevar tu mat a clase, al campo o a donde quieras frenar un rato. Tela noble, pensado para acompañarte siempre.",
+      "fotos": ["img/productos/bolso-para-el-mat-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": true
+    },
+    {
+      "id": "antifaz-de-lavanda",
+      "nombre": "Antifaz de relajación con lavanda",
+      "categoria": "practica",
+      "precio": "Próximamente",
+      "descripcion": "Un rato de oscuridad y aroma a lavanda para soltar el día. Ideal para la relajación final o para dormir mejor.",
+      "fotos": ["img/productos/antifaz-de-lavanda-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": false
+    },
+    {
+      "id": "almohadon-de-meditacion",
+      "nombre": "Almohadón de meditación",
+      "categoria": "practica",
+      "precio": "Próximamente",
+      "descripcion": "Firme y cómodo para sentarte a meditar. Cuando no lo usás, queda lindo en el living, como un almohadón más de la casa.",
+      "fotos": ["img/productos/almohadon-de-meditacion-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": true
+    },
+    {
+      "id": "puff-de-meditacion",
+      "nombre": "Puff de meditación",
+      "categoria": "practica",
+      "precio": "Próximamente",
+      "descripcion": "Una base baja y firme para tu práctica, que en casa funciona también como puff. Sencillo, cálido y hecho para durar.",
+      "fotos": ["img/productos/puff-de-meditacion-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": false
+    },
+    {
+      "id": "mate",
+      "nombre": "Mate",
+      "categoria": "rituales",
+      "precio": "Próximamente",
+      "descripcion": "El primer ritual del día. Un mate para cebar despacio, compartir y empezar la mañana con calma.",
+      "fotos": ["img/productos/mate-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": true
+    },
+    {
+      "id": "yerbero-albora",
+      "nombre": "Yerbero Albora",
+      "categoria": "rituales",
+      "precio": "Próximamente",
+      "descripcion": "Yerbero artesanal con el isotipo de Albora: el rombo de la guarda pampa con el sol al centro. Para tener a mano en la mesa.",
+      "fotos": ["img/productos/yerbero-albora-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": true
+    },
+    {
+      "id": "cortina-para-el-hogar",
+      "nombre": "Cortina para el hogar",
+      "categoria": "hogar",
+      "precio": "Próximamente",
+      "descripcion": "Tela liviana que deja pasar la luz de la mañana. Para que la casa se sienta un poco más campo.",
+      "fotos": ["img/productos/cortina-para-el-hogar-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": false
+    },
+    {
+      "id": "cortina-de-bano",
+      "nombre": "Cortina de baño",
+      "categoria": "hogar",
+      "precio": "Próximamente",
+      "descripcion": "Para que el baño también sea un lugar de pausa. Colores de la tierra y una caída suave.",
+      "fotos": ["img/productos/cortina-de-bano-1.webp"],
+      "variantes": [],
+      "stock": true,
+      "por_encargo": false,
+      "link_pago": "",
+      "destacado": false
+    }
+  ]
+}
