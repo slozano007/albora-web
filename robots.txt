@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://albora.com.ar/sitemap.xml

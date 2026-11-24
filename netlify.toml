@@ -24,3 +24,17 @@
   for = "/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# El material de marca (brandbook, logos originales, fuentes) y las plantillas quedan en el repo como referencia,
+# pero no se publican: cualquier dirección que empiece así devuelve la página 404.
+[[redirects]]
+  from = "/material/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/plantillas/*"
+  to = "/404.html"
+  status = 404
+  force = true

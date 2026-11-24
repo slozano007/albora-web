@@ -146,9 +146,23 @@
     grupo.addEventListener("change", function (e) {
       var v = e.target.value;
       var producto = loQuiero.getAttribute("data-producto");
-      var texto = "Hola! Quiero el " + producto + (v ? " (" + v + ")" : "") + " que vi en la web de Albora 🌾";
+      var art = loQuiero.getAttribute("data-articulo") || "el";
+      var inicio = loQuiero.getAttribute("data-modo") === "quiero" ? "Hola! Quiero " : "Hola! Quería consultar por ";
+      var texto = inicio + art + " " + producto + (v ? " (" + v + ")" : "") + " que vi en la web de Albora 🌾";
       loQuiero.href = base + encodeURIComponent(texto);
       loQuiero.setAttribute("data-variante", v);
+    });
+  });
+
+  // ---------- Galería del producto (miniaturas) ----------
+  document.querySelectorAll("[data-galeria]").forEach(function (g) {
+    var principal = g.querySelector(".galeria__principal img");
+    g.querySelectorAll("[data-foto]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (principal) principal.src = btn.getAttribute("data-foto");
+        g.querySelectorAll("[data-foto]").forEach(function (o) { o.removeAttribute("aria-current"); });
+        btn.setAttribute("aria-current", "true");
+      });
     });
   });
 
